@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>Sorteio</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="title" lang="en">Sorteio</header>
+      <section class="content">
+        <p>Insira as informações para realizar o sorteio.</p>
+        <form class="form-group">
+          <div class="form">
+
+            <div class="input-group">
+              <input type="number" id="min" class="input" required />
+              <label for="min" class="label">Número mínimo</label>
+            </div>
+
+            <div class="input-group">
+              <input type="number" id="max" class="input" required />
+              <label for="max" class="label">Número máximo</label>
+            </div>
+          </div>
+          <div id="alert"></div>
+
+          <div class="form">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox">Contagem regressiva</label>
+
+            <div class="dropdown">
+              <button type="button" id="btn-dropdown" class="show">
+                <span id="dropdown-text">5</span>segundos
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="10"
+                    fill="currentColor"
+                    class="bi bi-chevron-down"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </span>
+              </button>
+
+              <div class="dropdown-menu">
+
+                <div class="dropdown-items">
+                  <input type="radio" name="option" id="tres" value="3" />
+                  <label for="tres">3 segundos</label>
+                </div>
+
+                <div class="dropdown-items">
+                  <input
+                    type="radio"
+                    name="option"
+                    id="cinco"
+                    value="5"
+                    checked
+                  />
+                  <label for="cinco">5 segundos</label>
+                </div>
+
+                <div class="dropdown-items">
+                  <input type="radio" name="option" id="dez" value="10" />
+                  <label for="dez">10 segundos</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" id="btn-submit">Sortear</button>
+        </form>
+      </section>
+    </main>
+
+  </body>
+  <script src="/assets/js/script.js"></script>
+</html>
